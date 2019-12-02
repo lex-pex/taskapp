@@ -18,9 +18,9 @@ class TaskController
     /**
      * Browse all resources page.
      */
-    public function list() {
-        $list = Task::all();
-        require_once ROOT . '/view/task/list.php';
+    public function index() {
+        $list = Task::all(false);
+        require_once ROOT . '/view/task/index.php';
     }
 
     /**
@@ -117,6 +117,9 @@ class TaskController
         }
     }
 
+    /**
+     * Remove the specified resource from storage.
+     */
     public function destroy() {
         if($_SERVER['REQUEST_METHOD'] !== 'POST') abort(404);
         if(!is_token()) redirect('login');

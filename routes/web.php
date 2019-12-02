@@ -35,7 +35,7 @@ return [
     'task/destroy' => 'TaskController/destroy',    // delete | Admin
 
     // browse methods
-    'task/list' => 'TaskController/list',          // get    | Admin
+    'task/index' => 'TaskController/index',          // get
 
     // Following route has to be LAST cause token parameter takes away any other URI segments
     'task/{id}' => 'TaskController/show',          // get

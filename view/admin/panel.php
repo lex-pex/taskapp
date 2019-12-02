@@ -8,8 +8,8 @@
                     </div>
                     <div class="card-body">
                         <p class="mc-alert">
-                            <a href="<?php route('user/index') ?>"> All Users </a>
-                            <a class="float-right" href="<?php route('task/list') ?>"> All Tasks </a>
+                            <a href="<?php route('user/index') ?>"> Список пользователей </a>
+                            <a class="float-right" href="<?php route('task/index') ?>"> Список задач </a>
                         </p>
                         <p>
                             Инициация всех Таблиц и засев Сидов <br/> с Админом: (admin / 123, users / 321):

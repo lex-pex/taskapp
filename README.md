@@ -1,5 +1,5 @@
 
-# ___ "The Task App" ____
+#  "The Task App" 
 
 We bring to Your attention an absolutely
 brand new task management application.
@@ -7,7 +7,7 @@ Has everything You can imagine and beyond!
 
 Let us introduce our Mind Crushing Solution!
 
-### ____ Приложение-Задачник: ____
+###  Приложение-Задачник: 
 
 ##### РАБОТАЮЩИЙ ПРИМЕР ОП ССЫЛКЕ:
 
