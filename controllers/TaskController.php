@@ -70,7 +70,11 @@ class TaskController
             $item = $item ? $item : new Task([$user_name, $email, $text, 0, $user_id]);
         }
         $item->save();
+
+        // After new added "Task"  clear the sorting criteria
+        $this->fixFeedLiseSorting();
         unset_old_form_params();
+
         header('Location: /');
         return;
     }
@@ -155,6 +159,17 @@ class TaskController
             if($a[$i] === '>') $a[$i] = '&gt;';
         }
         return implode('', $a);
+    }
+
+    /**
+     * After new added "Task"  clear the sorting criteria
+     */
+    private function fixFeedLiseSorting() {
+        $lifo = true;
+        $_SESSION['sort_criteria']['order'] = $lifo;
+        $_SESSION['sort_criteria']['sort_by'] = 'created_at';
+        header('Location: /');
+        return;
     }
 
 }

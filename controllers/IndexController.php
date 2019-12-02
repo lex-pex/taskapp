@@ -16,7 +16,7 @@ class IndexController {
     public function index($page = 1) {
 
         $lifo = true;
-        $sort_by = 'id';
+        $sort_by = 'created_at';
 
         if(isset($_SESSION['sort_criteria'])) {
             $lifo = $_SESSION['sort_criteria']['order'] == 'descending' ? true : false;

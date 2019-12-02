@@ -99,6 +99,7 @@
                                         <option <?php echo isset($sort_by) ? ($sort_by == 'created_at' ? 'selected' : '') : '' ?> value="created_at"> Последние добавленые </option>
                                         <option <?php echo isset($sort_by) ? ($sort_by == 'updated_at' ? 'selected' : '') : '' ?> value="updated_at"> Последние исправления </option>
                                         <option <?php echo isset($sort_by) ? ($sort_by == 'user_name' ? 'selected' : '') : '' ?> value="user_name"> Имени пользователя </option>
+                                        <option <?php echo isset($sort_by) ? ($sort_by == 'user_id' ? 'selected' : '') : '' ?> value="user_id"> ID пользователя </option>
                                         <option <?php echo isset($sort_by) ? ($sort_by == 'email' ? 'selected' : '') : '' ?> value="email"> Email Почте </option>
                                         <option <?php echo isset($sort_by) ? ($sort_by == 'status' ? 'selected' : '') : '' ?> value="status"> Статусу Готовности </option>
                                     </select>

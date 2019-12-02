@@ -3,10 +3,10 @@
         <div class="row justify-content-center">
             <div class="col-md-6 col-sm-10 pt-4">
                 <?php foreach($list as $item): ?>
-                    <div class="alert alert-dark">
+                    <div class="alert alert-<?php echo $item->status ? 'info' : 'danger' ?>">
                         <div class="row">
                             <div class="col-6">
-                                # <?php echo $item->id ?>
+                                # <?php echo $item->id . ': <mark>' . ($item->status ? 'Решена' : 'В работе') . '</mark>' ?>
                             </div>
                             <div class="col-6 text-right">
                                 <h6><?php echo $item->user_name ?></h6>
